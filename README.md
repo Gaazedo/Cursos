@@ -1,6 +1,6 @@
-# Livro de Receitas :wave:
+# Santander Repository :wave:
 
-Olá! Bem vindo ao meu livro de receitas:wave:
+Olá! Bem vindo ao repositório do Bootcamp do Santander :wave:
 
- - Strogonoff de frango
+ - "Receitas" é meu repositório do Curso de Introdução ao GIT.
 
