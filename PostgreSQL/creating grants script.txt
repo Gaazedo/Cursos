@@ -1,0 +1,12 @@
+--GRANTS DAS ROLES:
+
+CREATE TABLE teste (nome varchar);
+
+--dando todos os privilégios dessa tabela para role professores
+GRANT ALL ON TABLE teste TO professores;
+
+--Criando role Gabriel com as permissões da Role com GRANTS
+CREATE ROLE gabriel INHERIT LOGIN PASSWORD '123' IN ROLE professores;
+
+--Retirando permissões de professores de Gabriel
+REVOKE professores FROM gabriel;

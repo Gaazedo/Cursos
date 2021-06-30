@@ -1,0 +1,33 @@
+
+CREATE ROLE professores
+NOCREATEDB
+NOCREATEROLE
+INHERIT
+NOLOGIN
+NOBYPASSRLS
+CONNECTION LIMIT 10;
+
+CREATE ROLE alunos 
+NOCREATEDB
+NOCREATEROLE
+INHERIT
+NOLOGIN
+NOBYPASSRLS
+CONNECTION LIMIT 90;
+
+--Script de associação de Roles:
+
+CREATE ROLE gabriel LOGIN CONNECTION LIMIT 1 PASSWORD '123' IN ROLE professores;
+
+--Script de dessociar membros entre Roles:
+
+REVOKE professores FROM gabriel
+
+--Script de Alteração de Roles:
+
+ALTER ROLE alunos CONNECTION LIMIT 100;
+
+--Script de Apagar Role:
+
+DROP ROLE gabriel;
+
