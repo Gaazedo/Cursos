@@ -1,0 +1,15 @@
+--Fazendo DML com Idempotência
+
+--insert não recomendado
+INSERT INTO agencia (banco_numero,numero,nome)
+SELECT 341,1,'Centro da cidade'
+WHERE NOT EXISTS (SELECT banco_numero,numero, nome FROM agencia WHERE banco_numero = 341 AND nome = 'Centro da cidade');
+
+--insert recomendado
+INSERT INTO agencia (banco_numero,numero,nome) VALUES(341,1,'Centro da cidade') ON
+CONFLICT (banco_numero,numero) DO NOTHING;
+
+--TRUNCATE " ESVAZIA A TABELA "
+
+TRUNCATE agencia * CONTINUE IDENTITY CASCADE
+

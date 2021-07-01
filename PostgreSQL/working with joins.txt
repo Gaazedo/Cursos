@@ -1,0 +1,22 @@
+--TRABALHANDO COM JOINS (INNER,LEFT,RIGHT,FULL,CROSS)
+
+SELECT b.numero,b.nome,a.numero,a.nome
+FROM banco b
+INNER JOIN agencia a ON a.banco_numero = b.numero;
+
+SELECT COUNT(DISTINCT  b.numero)
+FROM banco b
+INNER JOIN agencia a ON a.banco_numero = b.numero;
+
+SELECT b.numero,b.nome,a.numero,a.nome
+FROM banco b
+LEFT JOIN agencia a ON a.banco_numero = b.numero;
+
+SELECT a.numero,a.nome,b.numero,b.nome
+FROM agencia a
+RIGHT JOIN banco b ON  b.numero = a.banco_numero;
+
+SELECT b.numero,b.nome,a.numero,a.nome
+FROM banco b
+FULL JOIN agencia a ON a.banco_numero = b.numero;
+
