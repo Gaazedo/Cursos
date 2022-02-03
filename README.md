@@ -1,4 +1,4 @@
-# Meus Cursos e Projetos _Gabriel Azevedo_
+# Meus Cursos e Projetos 
 
 Olá! Bem vindo ao repositório do Bootcamp do Santander :wave:
 
