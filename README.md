@@ -6,3 +6,4 @@ Olá! Bem vindo ao repositório de cursos e projetos pessoais :wave:
  - "PostgreSQL" é a pasta do curso de PostgreSQL com conceitos básicos e melhores práticas de SQL
  - "Java" é a pasta do curso de Java.
  - "Pipeline - Alura" é a pasta do curso de Spark e Airflow da Alura
+ - "Introdução ao Machine Learning" é a pasta do curso de SKLearn da Alura
